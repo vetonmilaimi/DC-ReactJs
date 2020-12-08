@@ -13,13 +13,13 @@ function Cards() {
                             src="images/d1.jpg"
                             text="Cilësia, bukuria, kualiteti dhe mbi të gjitha siguria e garantuar... Mos harroni i gjeni vetëm tek ne.!"
                             label='Derë Oborri'
-                            path='/services'
+                            path='/katalogu'
                         />
                         <CardItem 
                             src="images/sh1.jpg"
                             text="Cilësia, bukuria, kualiteti dhe mbi të gjitha siguria e garantuar... Mos harroni i gjeni vetëm tek ne.! "
                             label='Gilindera për shkallë'
-                            path='/services'
+                            path='/katalogu'
                         />
                     </ul>
 
@@ -28,13 +28,13 @@ function Cards() {
                             src="images/b1.jpg"
                             text="Cilësia, bukuria, kualiteti dhe mbi të gjitha siguria e garantuar... Mos harroni i gjeni vetëm tek ne.!"
                             label='Terasa'
-                            path='/services'
+                            path='/katalogu'
                         />
                         <CardItem 
                             src="images/rr1.jpg"
                             text="Cilësia, bukuria, kualiteti dhe mbi të gjitha siguria e garantuar... Mos harroni i gjeni vetëm tek ne.! "
                             label='Rrethojë për oborrë'
-                            path='/services'
+                            path='/katalogu'
                         />
                     </ul>
                 </div>
