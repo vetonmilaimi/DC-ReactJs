@@ -8,12 +8,12 @@ function ContactForm() {
             <form action="mailto:veton.milaimi1@gmail.com" method="post">
 
                 <div>
-                    <label for='name'>Emri i juaj:</label> <br />
+                    <label htmlFor='name'>Emri i juaj:</label> <br />
                     <input type="text" id="name" placeholder="Emri dhe Mbiemri" required/>
                 </div>
 
                 <div>
-                    <label for='message'>Mesazhi i juaj:</label> <br />
+                    <label htmlFor='message'>Mesazhi i juaj:</label> <br />
                     <textarea type="text" id="message" placeholder="Mesazhi" rows="5" required/>
                 </div>
 

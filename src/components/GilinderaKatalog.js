@@ -18,6 +18,26 @@ function GilinderaKatalog () {
             title: 'SH3',
             thumbUrl: 'images/thumb-sh3.jpg'
         },
+        {
+            url: 'images/sh3.jpg',
+            title: 'SH3',
+            thumbUrl: 'images/thumb-sh3.jpg'
+        },
+        {
+            url: 'images/sh3.jpg',
+            title: 'SH3',
+            thumbUrl: 'images/thumb-sh3.jpg'
+        },
+        {
+            url: 'images/sh3.jpg',
+            title: 'SH3',
+            thumbUrl: 'images/thumb-sh3.jpg'
+        },
+        {
+            url: 'images/sh3.jpg',
+            title: 'SH3',
+            thumbUrl: 'images/thumb-sh3.jpg'
+        },
     ]
 
     return (

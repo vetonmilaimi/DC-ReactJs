@@ -33,6 +33,56 @@ function DyerKatalog () {
             title: 'RR3',
             thumbUrl: 'images/thumb-rr3.jpg'
         },
+        {
+            url: 'images/rr3.jpg',
+            title: 'RR3',
+            thumbUrl: 'images/thumb-rr3.jpg'
+        },
+        {
+            url: 'images/rr3.jpg',
+            title: 'RR3',
+            thumbUrl: 'images/thumb-rr3.jpg'
+        },
+        {
+            url: 'images/rr3.jpg',
+            title: 'RR3',
+            thumbUrl: 'images/thumb-rr3.jpg'
+        },
+        {
+            url: 'images/rr3.jpg',
+            title: 'RR3',
+            thumbUrl: 'images/thumb-rr3.jpg'
+        },
+        {
+            url: 'images/rr3.jpg',
+            title: 'RR3',
+            thumbUrl: 'images/thumb-rr3.jpg'
+        },
+        {
+            url: 'images/rr3.jpg',
+            title: 'RR3',
+            thumbUrl: 'images/thumb-rr3.jpg'
+        },
+        {
+            url: 'images/rr3.jpg',
+            title: 'RR3',
+            thumbUrl: 'images/thumb-rr3.jpg'
+        },
+        {
+            url: 'images/rr3.jpg',
+            title: 'RR3',
+            thumbUrl: 'images/thumb-rr3.jpg'
+        },
+        {
+            url: 'images/rr3.jpg',
+            title: 'RR3',
+            thumbUrl: 'images/thumb-rr3.jpg'
+        },
+        {
+            url: 'images/rr3.jpg',
+            title: 'RR3',
+            thumbUrl: 'images/thumb-rr3.jpg'
+        },
     ]
 
     return (
