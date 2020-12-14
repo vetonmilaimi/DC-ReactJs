@@ -1,5 +1,5 @@
 import React from 'react';
-import DztImageGalleryComponent from 'reactjs-image-gallery'
+import DztImageGalleryComponent from 'reactjs-image-gallery';
 
 function DyerKatalog () {
     var data = [
