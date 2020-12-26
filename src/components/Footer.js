@@ -57,7 +57,7 @@ function Footer() {
                             DURAJ-COM <i className="fab fa-typo3"></i>
                         </Link>
                     </div>
-                    <small className="website-rights">DURAJ-COM © 2020.Created by:<a className="veton-rights" href="https://facebook.com/veton.milaimi.587" > Veton Milaimi</a></small>
+                    <small className="website-rights">DURAJ-COM © 2020.Created by:<a className="veton-rights" href="https://facebook.com/veton.milaimi.587" target="_blank"> Veton Milaimi</a></small>
                 </div>
             </section>
         </div>

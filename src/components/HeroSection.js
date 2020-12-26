@@ -11,7 +11,7 @@ function HeroSection() {
             <p>Ne e njohim mirë gjuhën e hekurit, tradita vazhdon, kualiteti na mbanë</p>
             <div className="hero-btns">
                 <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
-                    SHIKO VIDEO <i className='far fa-play-circle' />
+                    Katalogu <i className="far fa-file-image"></i>
                 </Button>
             </div>
         </div>
