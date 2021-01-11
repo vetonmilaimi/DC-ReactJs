@@ -151,3 +151,52 @@
       transition: 250ms;
     }
   }
+
+
+  
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+    background: rgba(64, 93, 230, 0.8);
+    color: white;
+}
+
+.instagram {
+    background: rgba(131, 58, 180, 0.8);
+    color: white;
+}
+
+.linkedin {
+    background: rgba(0, 123, 181, 0.8);
+    color: white;
+}
+
+.youtube {
+    background: rgba(187, 0, 0, 0.8);
+    color: white;
+}
+
+.telephone {
+    background-color: rgba(27, 191, 71, 0.8);
+    color: white;
+}

@@ -5,62 +5,27 @@ import './Footer.css'
 
 function Footer() {
     return (
-        <div className='footer-container'>
-            <section className='footer-subscription'>
-                <p className='footer-subscription-heading'>
-                    Pranoni nga ne ofertat më të reja duke bërë Subscribe më posht
-                </p>
-                <p className='footer-subscription-text'>
-                    Mund të na bëni UnSubscribe në ç'do kohë.
-                </p>
-                <div className='input-areas'>
-                    <form>
-                        <input type="email" name="email" placeholder="Your Email" className="footer-input" />
-                        <Button buttonStyle='btn--outline'>Subscribe</Button>
-                    </form>
-                </div>
-            </section>
-            <div className="footer-links">
-                <div className="footer-link-wrapper">
-                    <div className="footer-link-items">
-                        <h2>Rreth Nesh</h2>
-                        <Link to='/services'>Shërbimet </Link>
-                        <Link to='/katalogu'>Katalogu i punimeve </Link>
-                        <Link to='/contact'>Kontaktoni me ne</Link>
+        <footer>
+            <article>
+                <section>
+                    <div className="row">
+                        <div className="coloumn">
+                            <img className="footer-logo" src="images/logo.jpg" alt="Logo in the footer"/>
+                        </div>
+                        <div className="coloumn">
+                            <ul className="social-media-footer">
+                                <li><a href="tel:38344560885" target="_blank">Call us</a></li>
+                                <li><a href="https://facebook.com/durajcom" target="_blank">Facebook</a></li>
+                                <li><a href="https://instagram.com/durajcom" target="_blank">Instagram</a></li>
+                                <li><a href="#" target="_blank">Youtube</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className="footer-link-items">
-                        <h2>Na kontaktoni</h2>
-                        <Link to='/services'>Shërbimet </Link>
-                        <Link to='/katalogu'>Katalogu i punimeve </Link>
-                        <Link to='/contact'>Kontaktoni me ne</Link>
-                    </div>
-                </div>
-                <div className="footer-link-wrapper">
-                    <div className="footer-link-items">
-                        <h2>Videot</h2>
-                        <Link to='/services'>Shërbimet </Link>
-                        <Link to='/katalogu'>Katalogu i punimeve </Link>
-                        <Link to='/contact'>Kontaktoni me ne</Link>
-                    </div>
-                    <div className="footer-link-items">
-                        <h2>Rrjetet sociale</h2>
-                        <Link to='/services'>Shërbimet </Link>
-                        <Link to='/katalogu'>Katalogu i punimeve </Link>
-                        <Link to='/contact'>Kontaktoni me ne</Link>
-                    </div>
-                </div>
-            </div>
-            <section className="social-media">
-                <div className="social-media-wrap">
-                    <div className="footer-logo">
-                        <Link to='/' className="social-logo">
-                            DURAJ-COM <i className="fab fa-typo3"></i>
-                        </Link>
-                    </div>
-                    <small className="website-rights">DURAJ-COM © 2020.Created by:<a className="veton-rights" href="https://facebook.com/veton.milaimi.587" target="_blank"> Veton Milaimi</a></small>
-                </div>
-            </section>
-        </div>
+                    <hr/>
+                    <p className="footer-rights">Të gjitha të drejtat janë të rezervuara <span className="name">DURAJ-COM&copy;{new Date().getFullYear()}</span>. Created and designed by <a href="https://facebook.com/veton.milaimi.587" target="_blank">Veton Milaimi</a> </p>
+                </section>
+            </article>
+        </footer>
     );
 }
 
