@@ -1,52 +1,51 @@
-import React from 'react';
-import DztImageGalleryComponent from 'reactjs-image-gallery'
+import React, { useState, useCallback } from 'react';
+import { render } from 'react-dom';
+import ImageViewer from 'react-simple-image-viewer';
 
 function GilinderaKatalog () {
-    var data = [
-        {
-            url: 'images/sh1.jpg',
-            title: 'SH1',
-            thumbUrl: 'images/thumb-sh1.jpg'
-        },
-        {
-            url: 'images/sh2.jpg',
-            title: 'SH2',
-            thumbUrl: 'images/thumb-sh2.jpg'
-        },
-        {
-            url: 'images/sh3.jpg',
-            title: 'SH3',
-            thumbUrl: 'images/thumb-sh3.jpg'
-        },
-        {
-            url: 'images/sh3.jpg',
-            title: 'SH3',
-            thumbUrl: 'images/thumb-sh3.jpg'
-        },
-        {
-            url: 'images/sh3.jpg',
-            title: 'SH3',
-            thumbUrl: 'images/thumb-sh3.jpg'
-        },
-        {
-            url: 'images/sh3.jpg',
-            title: 'SH3',
-            thumbUrl: 'images/thumb-sh3.jpg'
-        },
-        {
-            url: 'images/sh3.jpg',
-            title: 'SH3',
-            thumbUrl: 'images/thumb-sh3.jpg'
-        },
-    ]
+    const [currentImage, setCurrentImage] = useState(0);
+    const [isViewerOpen, setIsViewerOpen] = useState(false);
+    const images = [
+        'images/sh1.jpg',
+        'images/sh2.jpg',
+        'images/sh3.jpg',
+        'images/sh1.jpg',
+        'images/sh2.jpg',
+        'images/sh3.jpg',
+    ];
+
+    const openImageViewer = useCallback((index) => {
+        setCurrentImage(index);
+        setIsViewerOpen(true);
+    }, []);
+
+    const closeImageViewer = () => {
+        setCurrentImage(0);
+        setIsViewerOpen(false);
+    };
 
     return (
-        <div style={{backgroundColor: "#242424"}}>
+        <div style={{backgroundColor: "#353535", textAlign: "center"}}>
             <h1>Gilindera për shkallë</h1>
-            <DztImageGalleryComponent
-                images={data} />
+            {images.map((src, index) => (
+                <img
+                    src={src}
+                    onClick={() => openImageViewer(index)}
+                    width="300"
+                    key={index}
+                    style={{ margin: '2px' }}
+                    alt="" />
+            ))}
+
+            {isViewerOpen && (
+                <ImageViewer
+                    src={images}
+                    currentIndex={currentImage}
+                    onClose={closeImageViewer}
+                />
+            )}
+            <hr/>
         </div>
     );
 }
-
 export default GilinderaKatalog;

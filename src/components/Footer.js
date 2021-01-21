@@ -14,10 +14,11 @@ function Footer() {
                         </div>
                         <div className="coloumn">
                             <ul className="social-media-footer">
-                                <li><a href="tel:38344560885" target="_blank">Call us</a></li>
+                                <li><a href="tel:38344560885" target="_blank">Na telefononi</a></li>
                                 <li><a href="https://facebook.com/durajcom" target="_blank">Facebook</a></li>
                                 <li><a href="https://instagram.com/durajcom" target="_blank">Instagram</a></li>
-                                <li><a href="#" target="_blank">Youtube</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=lZeVZScC_qk" target="_blank">Youtube</a></li>
+                                <li><a href="mailto:veton.milaimi1@gmail.com" target="_blank">Na dërgoni email</a></li>
                             </ul>
                         </div>
                     </div>

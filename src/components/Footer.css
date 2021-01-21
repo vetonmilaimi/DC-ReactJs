@@ -34,7 +34,7 @@ footer {
 
 .coloumn {
     flex: 50%;
-    margin: 15px;
+    /* margin: 15px; */
 }
 
 .footer-rights {
@@ -54,6 +54,6 @@ footer {
     }    
 
     .footer-logo {
-        display: none;
+        width: 35%;
     }
 }

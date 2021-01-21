@@ -1,95 +1,50 @@
-import React from 'react';
-import DztImageGalleryComponent from 'reactjs-image-gallery';
+import React, { useState, useCallback } from 'react';
+import { render } from 'react-dom';
+import ImageViewer from 'react-simple-image-viewer';
 
-function DyerKatalog () {
-    var data = [
-        {
-            url: 'images/d1.jpg',
-            title: 'D1',
-            thumbUrl: 'images/thumb-d1.jpg'
-        },
-        {
-            url: 'images/d2.jpg',
-            title: 'D2',
-            thumbUrl: 'images/thumb-d2.jpg'
-        },
-        {
-            url: 'images/d3.jpg',
-            title: 'D3',
-            thumbUrl: 'images/thumb-d3.jpg'
-        },
-        {
-            url: 'images/rr1.jpg',
-            title: 'RR1',
-            thumbUrl: 'images/thumb-rr1.jpg'
-        },
-        {
-            url: 'images/rr2.jpg',
-            title: 'RR2',
-            thumbUrl: 'images/thumb-rr2.jpg'
-        },
-        {
-            url: 'images/rr3.jpg',
-            title: 'RR3',
-            thumbUrl: 'images/thumb-rr3.jpg'
-        },
-        {
-            url: 'images/rr3.jpg',
-            title: 'RR3',
-            thumbUrl: 'images/thumb-rr3.jpg'
-        },
-        {
-            url: 'images/rr3.jpg',
-            title: 'RR3',
-            thumbUrl: 'images/thumb-rr3.jpg'
-        },
-        {
-            url: 'images/rr3.jpg',
-            title: 'RR3',
-            thumbUrl: 'images/thumb-rr3.jpg'
-        },
-        {
-            url: 'images/rr3.jpg',
-            title: 'RR3',
-            thumbUrl: 'images/thumb-rr3.jpg'
-        },
-        {
-            url: 'images/rr3.jpg',
-            title: 'RR3',
-            thumbUrl: 'images/thumb-rr3.jpg'
-        },
-        {
-            url: 'images/rr3.jpg',
-            title: 'RR3',
-            thumbUrl: 'images/thumb-rr3.jpg'
-        },
-        {
-            url: 'images/rr3.jpg',
-            title: 'RR3',
-            thumbUrl: 'images/thumb-rr3.jpg'
-        },
-        {
-            url: 'images/rr3.jpg',
-            title: 'RR3',
-            thumbUrl: 'images/thumb-rr3.jpg'
-        },
-        {
-            url: 'images/rr3.jpg',
-            title: 'RR3',
-            thumbUrl: 'images/thumb-rr3.jpg'
-        },
-        {
-            url: 'images/rr3.jpg',
-            title: 'RR3',
-            thumbUrl: 'images/thumb-rr3.jpg'
-        },
-    ]
+function DyerKatalog() {
+    const [currentImage, setCurrentImage] = useState(0);
+    const [isViewerOpen, setIsViewerOpen] = useState(false);
+    const images = [
+        'images/d1.jpg',
+        'images/d2.jpg',
+        'images/d3.jpg',
+        'images/rr1.jpg',
+        'images/rr2.jpg',
+        'images/rr3.jpg',
+    ];
+
+    const openImageViewer = useCallback((index) => {
+        setCurrentImage(index);
+        setIsViewerOpen(true);
+    }, []);
+
+    const closeImageViewer = () => {
+        setCurrentImage(0);
+        setIsViewerOpen(false);
+    };
 
     return (
-        <div style={{backgroundColor: "#242424"}}>
-            <h1>Dyer dhe Rrethoja</h1>
-            <DztImageGalleryComponent
-                images={data} />
+        <div style={{backgroundColor: "#353535", textAlign: "center"}}>
+            <h1>Dyer dhe taraba</h1>
+            {images.map((src, index) => (
+                <img
+                    src={src}
+                    onClick={() => openImageViewer(index)}
+                    width="300"
+                    key={index}
+                    style={{ margin: '2px' }}
+                    alt="" />
+            ))}
+
+            {isViewerOpen && (
+                <ImageViewer
+                    src={images}
+                    currentIndex={currentImage}
+                    onClose={closeImageViewer}
+                />
+            )}
+            <hr/>
         </div>
     );
 }

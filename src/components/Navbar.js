@@ -41,8 +41,8 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                                Sherbimet
+                            <Link to='/blogu' className='nav-links' onClick={closeMobileMenu}>
+                                Blogu
                             </Link>
                         </li>
                         <li className='nav-item'>
@@ -61,12 +61,11 @@ function Navbar() {
             </nav>
 
             <div className="icon-bar">
-                <a href="https://www.facebook.com/veton.milaimi.587/" className="facebook"><i className="fa fa-facebook"></i></a>
-                <a href="https://www.instagram.com/veton.milaimi/" className="instagram"><i className="fa fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/veton-milaimi-171a24174/i" className="linkedin"><i className="fa fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/channel/UCXol91t3TnMIT1Uh-h7Qn7A" className="youtube"><i className="fa fa-youtube"></i></a>
+                <a href="https://www.facebook.com/durajcom" className="facebook"><i className="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/durajcom" className="instagram"><i className="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/watch?v=lZeVZScC_qk" className="youtube"><i className="fa fa-youtube"></i></a>
                 <a href="mailto:veton.milaimi1@gmail.com" className="youtube"><i className="fas fa-mail-bulk"></i></a>
-                <a href="tel:+38343932432" className="telephone"><i className="fas fa-phone-alt"></i></a>
+                <a href="tel:+38344560885" className="telephone"><i className="fas fa-phone-alt"></i></a>
             </div>
         </>
     );

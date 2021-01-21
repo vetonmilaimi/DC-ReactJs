@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/Home';
-import Services from "./components/pages/Services";
+import Blogu from "./components/pages/Blogu";
 import Contact from "./components/pages/Contact";
 import Katalogu from "./components/pages/Katalogu";
 
@@ -14,7 +14,7 @@ function App() {
 			<Navbar />
 			<Switch>
 				<Route path="/" exact component={Home}/>
-				<Route path="/services" component={Services} />
+				<Route path="/blogu" component={Blogu} />
 				<Route path="/contact" component={Contact} />
 				<Route path="/katalogu" component={Katalogu} />
 			</Switch>
