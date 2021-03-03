@@ -13,10 +13,6 @@ function HeroSection() {
                 <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
                     Shiko Katalogun këtu <i className="far fa-file-image"></i>
                 </Button>
-                <br/>
-                <button className="btn--primary btn--large">
-                    <a href="https://ufile.io/jjd04lde">Shkarko Katalogun  </a><i className="fas fa-download"></i>
-                </button>
             </div>
         </div>
     )

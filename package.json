@@ -10,7 +10,7 @@
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
-    "react-simple-image-viewer": "0.0.8",
+    "simple-react-lightbox": "^3.6.3",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

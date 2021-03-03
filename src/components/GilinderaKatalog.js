@@ -1,50 +1,39 @@
 import React, { useState, useCallback } from 'react';
 import { render } from 'react-dom';
-import ImageViewer from 'react-simple-image-viewer';
+import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox'
 
-function GilinderaKatalog () {
-    const [currentImage, setCurrentImage] = useState(0);
-    const [isViewerOpen, setIsViewerOpen] = useState(false);
-    const images = [
-        'images/sh1.jpg',
-        'images/sh2.jpg',
-        'images/sh3.jpg',
-        'images/sh1.jpg',
-        'images/sh2.jpg',
-        'images/sh3.jpg',
-    ];
-
-    const openImageViewer = useCallback((index) => {
-        setCurrentImage(index);
-        setIsViewerOpen(true);
-    }, []);
-
-    const closeImageViewer = () => {
-        setCurrentImage(0);
-        setIsViewerOpen(false);
-    };
-
+function GilinderaKatalog() {
     return (
-        <div style={{backgroundColor: "#353535", textAlign: "center"}}>
+        <div className="gallery">
             <h1>Gilindera për shkallë</h1>
-            {images.map((src, index) => (
-                <img
-                    src={src}
-                    onClick={() => openImageViewer(index)}
-                    width="300"
-                    key={index}
-                    style={{ margin: '2px' }}
-                    alt="" />
-            ))}
-
-            {isViewerOpen && (
-                <ImageViewer
-                    src={images}
-                    currentIndex={currentImage}
-                    onClose={closeImageViewer}
-                />
-            )}
-            <hr/>
+            <SimpleReactLightbox>
+                <SRLWrapper>
+                    <a href="images/sh1.jpg" >
+                        <img src="images/thumb-sh1.jpg" alt="D1" />
+                    </a>
+                    <a href="images/sh2.jpg">
+                        <img src="images/thumb-sh2.jpg" alt="D2" />
+                    </a>
+                    <a href="images/sh3.jpg" >
+                        <img src="images/thumb-sh3.jpg" alt="D3" />
+                    </a>
+                    <a href="images/sh2.jpg">
+                        <img src="images/thumb-sh2.jpg" alt="D2" />
+                    </a>
+                    <a href="images/sh1.jpg" >
+                        <img src="images/thumb-sh1.jpg" alt="D1" />
+                    </a>
+                    <a href="images/sh2.jpg">
+                        <img src="images/thumb-sh2.jpg" alt="D2" />
+                    </a>
+                    <a href="images/sh1.jpg" >
+                        <img src="images/thumb-sh1.jpg" alt="D1" />
+                    </a>
+                    <a href="images/sh2.jpg">
+                        <img src="images/thumb-sh2.jpg" alt="D2" />
+                    </a>
+                </SRLWrapper>
+            </SimpleReactLightbox>
         </div>
     );
 }
