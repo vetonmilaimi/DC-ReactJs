@@ -61,11 +61,11 @@ function Navbar() {
             </nav>
 
             <div className="icon-bar">
-                <a href="https://www.facebook.com/durajcom" className="facebook"><i className="fa fa-facebook"></i></a>
-                <a href="https://www.instagram.com/durajcom" className="instagram"><i className="fa fa-instagram"></i></a>
-                <a href="https://www.youtube.com/watch?v=lZeVZScC_qk" className="youtube"><i className="fa fa-youtube"></i></a>
-                <a href="mailto:veton.milaimi1@gmail.com" className="youtube"><i className="fas fa-mail-bulk"></i></a>
-                <a href="tel:+38344560885" className="telephone"><i className="fas fa-phone-alt"></i></a>
+                <a href="https://www.facebook.com/durajcom" className="facebook" target="_blank" rel="noreferrer"><i className="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/durajcom" className="instagram" target="_blank" rel="noreferrer"><i className="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/watch?v=lZeVZScC_qk" className="youtube" target="_blank" rel="noreferrer"><i className="fa fa-youtube"></i></a>
+                <a href="mailto:veton.milaimi1@gmail.com" className="youtube" target="_blank" rel="noreferrer"><i className="fas fa-mail-bulk"></i></a>
+                <a href="tel:+38344560885" className="telephone" target="_blank" rel="noreferrer"><i className="fas fa-phone-alt"></i></a>
             </div>
         </>
     );

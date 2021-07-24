@@ -1,0 +1,28 @@
+* { 
+    text-align: center;
+}
+
+.cards {
+    margin-top: -200px;
+}
+
+.card-container {
+    margin-top: 0;
+    margin-bottom: 15px;
+    background-color: rgb(87, 87, 87);
+    margin-left: 15%;
+    width: 70%;
+    border: 2px solid white;
+}
+
+
+@media screen and (max-width: 960px) {
+    .card-container {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .card-container h1 {
+        font-size: 30px;
+    }
+}
