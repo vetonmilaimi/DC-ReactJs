@@ -50,13 +50,26 @@ function Navbar() {
                                 Kontaktoni me ne
                             </Link>
                         </li>
+
+                        {/* ################################################################## */}
+                        {/* ################################################################## */}
+                        {/* ################################################################# */}
+                                {/* <li className='nav-item'>
+                                    <Link to='/katalogu' className='nav-links-mobile' onClick={closeMobileMenu}>
+                                        KATALOGU
+                                    </Link>
+                                </li> */}
+                        {/* ################################################################## */}
+                        {/* ################################################################## */}
+                        {/* ################################################################## */}
+
                         <li className='nav-item'>
-                            <Link to='/katalogu' className='nav-links-mobile' onClick={closeMobileMenu}>
+                            <Link to='/katalogu' className='nav-links' onClick={closeMobileMenu}>
                                 KATALOGU
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>KATALOGU</Button>}
+                    {/* {button && <Button buttonStyle='btn--outline'>KATALOGU</Button>} */}
                 </div>
             </nav>
 
@@ -71,4 +84,4 @@ function Navbar() {
     );
 }
 
-export default Navbar;  
+export default Navbar;

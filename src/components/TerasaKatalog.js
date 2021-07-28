@@ -1,5 +1,6 @@
 import React from 'react';
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox'
+import Footer from './Footer';
 
 function TerasaKatalog() {
     return (
@@ -30,6 +31,7 @@ function TerasaKatalog() {
                     </a>
                 </SRLWrapper>
             </SimpleReactLightbox>
+            <Footer />
         </div>
     );
 }

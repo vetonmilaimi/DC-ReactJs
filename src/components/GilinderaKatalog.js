@@ -1,5 +1,6 @@
 import React from 'react';
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox'
+import Footer from './Footer';
 
 function GilinderaKatalog() {
     return (
@@ -33,6 +34,7 @@ function GilinderaKatalog() {
                     </a>
                 </SRLWrapper>
             </SimpleReactLightbox>
+            <Footer />
         </div>
     );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox'
+import Footer from './Footer';
 
 function DyerKatalog() {
     return (
@@ -33,6 +34,7 @@ function DyerKatalog() {
                     </a>
                 </SRLWrapper>
             </SimpleReactLightbox>
+            <Footer />
         </div>
     );
 }

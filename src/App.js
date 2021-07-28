@@ -6,6 +6,9 @@ import Home from './components/pages/Home';
 import Blogu from "./components/pages/Blogu";
 import Contact from "./components/pages/Contact";
 import Katalogu from "./components/pages/Katalogu";
+import DyerKatalog from "./components/DyerKatalog";
+import GilinderaKatalog from "./components/GilinderaKatalog";
+import TerasaKatalog from "./components/TerasaKatalog";
 
 function App() {
 	return (
@@ -17,6 +20,10 @@ function App() {
 				<Route path="/blogu" component={Blogu} />
 				<Route path="/contact" component={Contact} />
 				<Route path="/katalogu" component={Katalogu} />
+				<Route path="/dyer" component={DyerKatalog} />
+				<Route path="/gilindera" component={GilinderaKatalog} />
+				<Route path="/terasa"component={TerasaKatalog} />
+
 			</Switch>
 		</Router>
 		</>
