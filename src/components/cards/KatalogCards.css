@@ -41,6 +41,10 @@
     object-fit: cover;
 }
 
+.card_p_content {
+    text-align: left;
+}
+
 h1 {
     font-weight: 300;
     font-size: 3.5em;

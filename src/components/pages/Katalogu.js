@@ -1,9 +1,6 @@
 import React from 'react'
 import '../../App.css'
 import './Katalogu.css'
-import DyerKatalog from '../DyerKatalog';
-import GilinderaKatalog from '../GilinderaKatalog';
-import TerasaKatalog from '../TerasaKatalog';
 import Footer from '../Footer';
 import KatalogCards from '../cards/KatalogCards';
 

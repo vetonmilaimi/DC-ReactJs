@@ -1,3 +1,8 @@
+ul.catalogue-personal-menu {
+    display: grid;
+    justify-content: flex-start;
+}
+
 .gallery {
     text-align: center;
     background-color: #353535;
