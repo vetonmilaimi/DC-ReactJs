@@ -1,10 +1,14 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox'
 import Footer from './Footer';
 
 function GilinderaKatalog() {
     return (
         <div className="gallery">
+            <p className="gallery-back-link">
+                <Link to="katalogu" className="gallery-back-link"><i className="fas fa-undo"></i> Kthehu pas te katalogu</Link>
+            </p>
             <h1>Gilindera për shkallë</h1>
             <SimpleReactLightbox>
                 <SRLWrapper>

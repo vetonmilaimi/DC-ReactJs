@@ -3,6 +3,16 @@ ul.catalogue-personal-menu {
     justify-content: flex-start;
 }
 
+.gallery-back-link {
+    font-size: 1.05 em;
+    color: rgb(164, 244, 255);
+    text-decoration: none;
+}
+
+.gallery-back-link:hover {
+    color:rgb(255, 255, 255);
+}
+
 .gallery {
     text-align: center;
     background-color: #353535;

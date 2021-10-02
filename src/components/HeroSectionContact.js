@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import './ContactForm.css';
+import './forms/ContactForm.css';
 import "./HeroSection.css";
 
 function HeroSectionContact() {

@@ -1,9 +1,9 @@
 import React from 'react'
 
-import {Button} from '../Button'
-import {ButtonDyer} from '../ButtonDyer'
-import {ButtonGilindera} from '../ButtonGilindera'
-import {ButtonTerasa} from '../ButtonTerasa'
+import {Button} from '../buttons/Button'
+import {ButtonDyer} from '../buttons/ButtonDyer'
+import {ButtonGilindera} from '../buttons/ButtonGilindera'
+import {ButtonTerasa} from '../buttons/ButtonTerasa'
 
 function CardForm() {
     return (

@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { ButtonDyer } from '../ButtonDyer'
-import { ButtonGilindera } from '../ButtonGilindera'
-import { ButtonTerasa } from '../ButtonTerasa'
+import { ButtonDyer } from '../buttons/ButtonDyer'
+import { ButtonGilindera } from '../buttons/ButtonGilindera'
+import { ButtonTerasa } from '../buttons/ButtonTerasa'
 
 import './KatalogCards.css'
 

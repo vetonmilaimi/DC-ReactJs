@@ -21,7 +21,7 @@ function Footer() {
                         </div>
                     </div>
                     <hr/>
-                    <p className="footer-rights">Të gjitha të drejtat janë të rezervuara <span className="name">DURAJ-COM&copy;{new Date().getFullYear()}</span>. U krijua dhe dizajnua nga <a href="https://facebook.com/veton.milaimi.587" target="_blank" rel="noreferrer">Veton Milaimi</a> </p>
+                    <p className="footer-rights">All rights are reserved <span className="name">DURAJ-COM&copy;{new Date().getFullYear()}</span>. Created with ❤️ by: <a href="https://facebook.com/veton.milaimi.587" target="_blank" rel="noreferrer">Veton Milaimi</a> </p>
                 </section>
             </article>
         </footer>
