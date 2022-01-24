@@ -1,11 +1,12 @@
 import React from 'react'
 import '../../App.css'
 import Footer from '../Footer';
+import HeroSectionAbout from '../HeroSectionAbout';
 
 function About() {
     return (
         <div style={{textAlign: 'center'}}>
-            <h1 style={{color: '#242424'}}>Rreth nesh</h1>
+            <HeroSectionAbout />
             <Footer />
         </div>
     );
